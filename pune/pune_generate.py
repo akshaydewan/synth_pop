@@ -3,12 +3,12 @@ import pandas as pd
 
 
 def generate_population():
-    df = pd.read_csv('pune_dataset.csv')
+    df = pd.read_csv('ward_wise_dataset.csv')
 
     # Validate if all Males + Females = Total Population
     assert (df["Tot_Male"] + df["Tot_Female"]).equals(df["Total_Pop"])
 
-    age_df = pd.read_csv('Pune_Age_dist_by_sex.csv', index_col='Age_Group')
+    age_df = pd.read_csv('age_dist_by_sex.csv', index_col='Age_Group')
     # The two dataset totals should be in sync
     assert age_df.loc['All ages']['Total'] == df["Total_Pop"].sum()
 
@@ -26,7 +26,7 @@ def generate_population():
     print(male_age_probability)
     print(female_age_probability)
 
-    df_workers = pd.read_csv('pune_workers.csv', index_col='Age_Group')
+    df_workers = pd.read_csv('workers.csv', index_col='Age_Group')
     df_workers = df_workers[
         ['Total_Pop', 'Total_Males', 'Total_Females', 'Main_Workers_Total', 'Main_Workers_Males',
          'Main_Workers_Females']]  # Consider marginal workers as non-working for now
@@ -74,7 +74,7 @@ def generate_population():
 
     population_df = pd.DataFrame.from_dict(population, 'index',
                                            columns=['ward', 'sex', 'age', 'working', 'pub_transport'])
-    population_df.to_csv("population.csv", index_label='ind')
+    population_df.to_csv("output.csv", index_label='ind')
 
 
 def is_working(working_probabilities, age):
