@@ -1,5 +1,6 @@
-Age_Group,Total_Pop,Total_Males,Total_Females,Main_Working_Pop,Main_Working_Males,Main_Working_Females,Marginal_3m_Working_Pop,Marginal_3m_Working_Males,Marginal_3m_Working_Females,Marginal_6m_Working_Pop,Marginal_6m_Working_Males,Marginal_6m_Working_Females,Non_Working_Pop,Non_Working_Males,Non_Working_Feamles
+Age_Group,Total_Pop,Total_Males,Total_Females,Main_Working_Pop,Main_Working_Males,Main_Working_Females,Marginal_3m_Working_Pop,Marginal_3m_Working_Males,Marginal_3m_Working_Females,Marginal_6m_Working_Pop,Marginal_6m_Working_Males,Marginal_6m_Working_Females,Non_Working_Pop,Non_Working_Males,Non_Working_Females
 Total,3085411,1684608,1400803,1209334,975508,233826,11398,7378,4020,63664,38123,25541,1801015,663599,1137416
+00-04,189193,98595,90598,0,0,0,0,0,0,0,0,0,189193,98595,90598
 05-09,208264,108793,99471,2635,1558,1077,77,45,32,2008,1026,982,203544,106164,97380
 10-14,230713,122365,108348,6635,4813,1822,198,122,76,2717,1441,1276,221163,115989,105174
 15-19,265548,150557,114991,45124,37878,7246,1025,738,287,5672,3623,2049,213727,108318,105409
